@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "hooray-hoa",
-    "slug": "hooray-hoa",
+    "name": "hooray-hoa-mobile",
+    "slug": "hooray-hoa-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.anonymous.hooray-hoa"
+      "bundleIdentifier": "com.anonymous.hooray-hoa-mobile"
     },
     "android": {
       "adaptiveIcon": {
