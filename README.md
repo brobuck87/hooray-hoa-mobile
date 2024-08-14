@@ -2,15 +2,42 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
+## Prerequisites
+
+Install homebrew if you don't already have it by pasting and running in Terminal.
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Install Xcode via the Mac App store. If you are installing on windows you will not be able to run iOS simulators.
+https://apps.apple.com/us/app/xcode/id497799835?mt=12
+
 ## Get started
 
-1. Install dependencies
+1. Install Watchman
+
+   ```bash
+   brew install watchman
+   ```
+
+2. Install OpenJDK distribution called Azul Zulu using Homebrew. This distribution offers JDKs for both Apple Silicon and Intel Macs.
+
+   Run the following commands in a terminal:
+
+   ```bash
+   brew install --cask zulu@17
+   ```
+
+3. Follow the instructions [here](https://docs.expo.dev/get-started/set-up-your-environment/?mode=development-build&buildEnv=local#set-up-android-studio) to install and configure android studio.
+
+4. Install dependencies
 
    ```bash
    npm install
    ```
 
-2. Start the app
+5. Start the app
 
    ```bash
     npx expo start
@@ -25,9 +52,9 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Get a fresh project - start from scratch
 
-When you're ready, run:
+If you want to move the demo project into a demo folder you can run the command below:
 
 ```bash
 npm run reset-project
