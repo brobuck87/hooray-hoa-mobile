@@ -31,5 +31,10 @@
     "experiments": {
       "typedRoutes": true
     }
+  },
+  "ios": {
+    "infoPlist": {
+      "NSCameraUsageDescription": "This app uses the camera to take photos of users uploaded violations."
+    }
   }
 }

@@ -1,40 +1,9 @@
-import { SafeAreaView, FlatList, StyleSheet } from "react-native";
-import Item from "@/components/ListItem";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import MainTabNavigator from "../components/navigation/MainTabNavigator"; // Importing MainTabNavigator from the appropriate file
 
-export default function HomePage() {
-  const NavItems = [
-    {
-      icon: "house-chimney",
-      id: 123,
-    },
-    {
-      icon: "user",
-      id: 456,
-    },
-    {
-      icon: "gear",
-      id: 789,
-    },
-    {
-      icon: "info",
-      id: 101,
-    },
-  ];
+const Tab = createBottomTabNavigator();
 
-  return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <FlatList
-        data={NavItems}
-        renderItem={({ item }) => <Item icon={item.icon} />}
-        style={styles.listContainer}
-      />
-    </SafeAreaView>
-  );
+export default function Home() {
+  return <MainTabNavigator />;
 }
-
-const styles = StyleSheet.create({
-  listContainer: {
-    flex: 1,
-    flexDirection: "column",
-  },
-});

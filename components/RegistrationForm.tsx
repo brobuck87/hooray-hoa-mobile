@@ -109,6 +109,7 @@ const RegisterForm: React.FC = () => {
           style={styles.input}
           keyboardType="email-address"
           onChangeText={(text) => handleChange("email", text)}
+          autoCapitalize="none"
           value={formData.email}
         />
         {errors.email && <Text style={styles.errorText}>{errors.email}</Text>}
@@ -119,6 +120,7 @@ const RegisterForm: React.FC = () => {
           style={styles.input}
           secureTextEntry
           onChangeText={(text) => handleChange("password", text)}
+          autoCapitalize="none"
           value={formData.password}
         />
         {errors.password && (
